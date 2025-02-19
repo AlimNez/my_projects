@@ -1,11 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+	"strconv"
+)
 
 func main() {
 	b := 0
+	x, y := 15, 30
+
 	fmt.Println(test(b))
 	fmt.Println(test1(b))
+	fmt.Printf("%T ", intToString(b))
+	fmt.Println(intToString(b))
+	fmt.Println(minInt(x, y))
 }
 
 func test(sum int) string {
@@ -30,4 +39,11 @@ func test1(a int) string {
 	return ""
 }
 
-//func ()  {}
+func intToString(a int) (s string) {
+	s = strconv.Itoa(a)
+	return
+}
+
+func minInt(x, y int) int {
+	return int(math.Min(float64(x), float64(y)))
+}
