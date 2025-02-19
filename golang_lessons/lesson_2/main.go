@@ -8,7 +8,7 @@ import (
 
 func main() {
 	b := 0
-	x, y := 15, 30
+	x, y := 15, 25
 
 	fmt.Println(test(b))
 	fmt.Println(test1(b))
